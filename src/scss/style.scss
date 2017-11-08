@@ -1,0 +1,75 @@
+// Variables
+
+$primary-color: grey;
+
+
+ *{
+     margin: 0;
+     padding: 0;
+ }
+
+body {
+    font-family: Lato;
+    font-size: 1rem;
+}
+
+.a1 {
+    min-height: 100vh;
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+
+    h1 {
+        padding-top: 230px;
+        margin-bottom: 0;
+
+        span {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            border-bottom: 7px solid white;
+            padding-bottom: 6px;
+        }
+    }
+
+    h2 {
+        margin-top: 17px;
+        font-size: 3.9em;
+        font-weight: 300;
+    }
+
+    ul {
+        padding-top: 50px;
+        list-style: none;
+        text-align: center;
+        margin-top: 5%;
+        display: block;
+
+        li {
+            font-size: 50px;
+            text-decoration: none;
+            padding: 5px;
+            display: inline-block;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+}
+
+.b2 {
+    display: none;
+}
+
+.c3 {
+    display: none;
+}
+
+.d4 {
+    display: none;
+}
+
+.e5 {
+    display: none;
+}
