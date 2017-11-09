@@ -1,6 +1,29 @@
 // Variables
+$body-bg: #fff;
+$main-font: 'Arial';
 
-$primary-color: grey;
+$primary-color: #ff5733;
+$secondary-color: #fff;
+$light-color: #f0f0f0;
+$light-dark-color: #b8b8b8;
+$dark-color: #707070;
+$white: #fff;
+$black: #000;
+
+$container: 85%;
+$section-padding: 20px;
+
+// Functions
+
+// Adjusts the color of the text automatically accordingly with the brightness of $bg-color 
+// THIS IS AWESOME!!!!!!!!!!!!!
+@function set-text-color($bg-color){
+    @if(lightness($bg-color) > 50){
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
 
 
  *{
@@ -11,17 +34,30 @@ $primary-color: grey;
 body {
     font-family: Lato;
     font-size: 1rem;
+    background-image: url('../img/tests/Chitty Chitty Bang Bang.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .container {
     margin: auto;
-    width: 80%;
+    width: $container;
+    // border: 2px solid red;
+}
+
+.sm-container {
+    // border: 2px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 70%;
 }
 
 .a1 {
     min-height: 100vh;
-    background-color: $primary-color;
-    color: white;
+    // background-color: $dark-color;
+    color: $white;
     text-align: center;
 
     h1 {
@@ -65,7 +101,8 @@ body {
 
 .b2 {
     display: block;
-    min-height: 400px;
+    min-height: 325px;
+    background-color: $white;
     h1 {
         display: block;
         font-weight: 700;
@@ -76,22 +113,18 @@ body {
 
     .flex-container {
         // border: 3px solid green;
-        margin: auto;
-        margin-top: 70px;
-        width: 70%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        align-content: flex-start;
-
+        max-width: 960px;
+        margin: auto;
+        padding: 100px 0;
         .flex-item1{
             // background-color: red;
             align-self: center;
             img {
                 max-width: 250px;
                 border-radius: 50%;
-                margin-left: 40px;
+                // margin-left: 40px;
                 margin-right: 40px;
             }
         }
@@ -110,17 +143,201 @@ body {
         }
     }
 
-
 }
 
 .c3 {
     display: none;
+    background-color: $light-color;
+    color: $black;
+    min-height: 500px;
+    padding-top: 50px;
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+
+    .flex-container {
+        border: 3px solid green;
+        text-align: center;
+        // max-width: 960px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: center;
+
+        .flex-item{
+            max-width: 250px;
+            // padding: 20px;
+
+            img {
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 1.2em;
+            }
+
+            .t1 {
+                background-color: yellowgreen;
+            }
+        }
+
+    }
+
+
+}
+
+.c3-1 {
+    display: block;
+    background-color:$light-color;
+    color: $black;
+    min-height: 800px;
+    padding-top: 50px;
+
+    hr {
+        margin: 25px auto;
+        max-width: 685px;
+
+    }
+
+    img {
+        max-width: 200px;
+    }
+
+    .item:hover {
+        box-shadow: 1px 1px 5px #888888;
+    }
+
+    .title {
+        font-size: 1.5em;
+        text-align: center;   
+        padding-bottom: 25px;     
+    }
+
+    .flex-container {
+
+        display: flex;
+        justify-content: center;
+        
+
+        .item {
+            padding: 20px;
+        }
+    }
+
+    .core {
+
+        ul{
+            list-style: none;
+            margin-top: 25px;
+            text-align: center;
+
+            li{
+                font-weight: 300;
+                margin: 5px;
+            }
+        }
+    }
 }
 
 .d4 {
-    display: none;
+    background-color: $white;
+    display: block;
+    margin-top: -25px;
+    padding-top: 50px;
+    min-height: 425px;
+
+    h1 {
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .flex-container {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .square {
+        background-color: blue;
+        width: 225px;
+        height: 225px;
+        margin: 30px;
+    }
+
+    .s1 {
+        content:url('../img/projects/2cloud.png');
+    }
+
+    .s2 {
+        content:url('../img/projects/coffee.png');
+    }
+
+    .s3{
+        content:url('../img/projects/form.png');
+    }
+
+    .flex-item:hover {
+        box-shadow: 1px 1px 5px #888888;
+        z-index: 2;
+    }
+
 }
 
 .e5 {
+    display: block;
+    min-height: 400px;
+    color: $white;
+
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        margin-top: 35px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+
+    .cert {
+        margin-bottom: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+
+        h3 {
+            font-weight: 700;
+        }
+
+    }
+
+    .cert:hover {
+        // box-shadow: 5px 2px 25px #888888;
+    }
+}
+
+.f6 {
     display: none;
+    background-color: $light-color;
+    min-height: 500px;
+
+    h1 {
+        font-size: 3em;
+        text-align: center;
+        padding-top: 35px;
+        margin-bottom: 35px;
+    }
 }

@@ -4,16 +4,25 @@
 
 body {
   font-family: Lato;
-  font-size: 1rem; }
+  font-size: 1rem;
+  background-image: url("../img/tests/Chitty Chitty Bang Bang.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
 
 .container {
   margin: auto;
-  width: 80%; }
+  width: 85%; }
+
+.sm-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 70%; }
 
 .a1 {
   min-height: 100vh;
-  background-color: grey;
-  color: white;
+  color: #fff;
   text-align: center; }
   .a1 h1 {
     padding-top: 230px;
@@ -43,27 +52,24 @@ body {
 
 .b2 {
   display: block;
-  min-height: 400px; }
+  min-height: 325px;
+  background-color: #fff; }
   .b2 h1 {
     display: block;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 20px; }
   .b2 .flex-container {
-    margin: auto;
-    margin-top: 70px;
-    width: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: flex-start; }
+    max-width: 960px;
+    margin: auto;
+    padding: 100px 0; }
     .b2 .flex-container .flex-item1 {
       align-self: center; }
       .b2 .flex-container .flex-item1 img {
         max-width: 250px;
         border-radius: 50%;
-        margin-left: 40px;
         margin-right: 40px; }
     .b2 .flex-container .flex-item2 {
       align-self: center; }
@@ -75,10 +81,122 @@ body {
         text-align: left; }
 
 .c3 {
-  display: none; }
+  display: none;
+  background-color: #f0f0f0;
+  color: #000;
+  min-height: 500px;
+  padding-top: 50px; }
+  .c3 h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px; }
+  .c3 .flex-container {
+    border: 3px solid green;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: center; }
+    .c3 .flex-container .flex-item {
+      max-width: 250px; }
+      .c3 .flex-container .flex-item img {
+        margin-bottom: 25px; }
+      .c3 .flex-container .flex-item p {
+        font-weight: 300;
+        font-size: 1.2em; }
+      .c3 .flex-container .flex-item .t1 {
+        background-color: yellowgreen; }
+
+.c3-1 {
+  display: block;
+  background-color: #f0f0f0;
+  color: #000;
+  min-height: 800px;
+  padding-top: 50px; }
+  .c3-1 hr {
+    margin: 25px auto;
+    max-width: 685px; }
+  .c3-1 img {
+    max-width: 200px; }
+  .c3-1 .item:hover {
+    box-shadow: 1px 1px 5px #888888; }
+  .c3-1 .title {
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 25px; }
+  .c3-1 .flex-container {
+    display: flex;
+    justify-content: center; }
+    .c3-1 .flex-container .item {
+      padding: 20px; }
+  .c3-1 .core ul {
+    list-style: none;
+    margin-top: 25px;
+    text-align: center; }
+    .c3-1 .core ul li {
+      font-weight: 300;
+      margin: 5px; }
 
 .d4 {
-  display: none; }
+  background-color: #fff;
+  display: block;
+  margin-top: -25px;
+  padding-top: 50px;
+  min-height: 425px; }
+  .d4 h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 35px; }
+  .d4 ul {
+    list-style: none; }
+  .d4 .flex-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .d4 .square {
+    background-color: blue;
+    width: 225px;
+    height: 225px;
+    margin: 30px; }
+  .d4 .s1 {
+    content: url("../img/projects/2cloud.png"); }
+  .d4 .s2 {
+    content: url("../img/projects/coffee.png"); }
+  .d4 .s3 {
+    content: url("../img/projects/form.png"); }
+  .d4 .flex-item:hover {
+    box-shadow: 1px 1px 5px #888888;
+    z-index: 2; }
 
 .e5 {
-  display: none; }
+  display: block;
+  min-height: 400px;
+  color: #fff; }
+  .e5 h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 35px;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  .e5 .flex-container {
+    display: flex; }
+  .e5 .cert {
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px; }
+    .e5 .cert h3 {
+      font-weight: 700; }
+
+.f6 {
+  display: none;
+  background-color: #f0f0f0;
+  min-height: 500px; }
+  .f6 h1 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 35px;
+    margin-bottom: 35px; }
