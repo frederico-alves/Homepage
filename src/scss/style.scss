@@ -558,20 +558,23 @@ section {
     }
 
     .flex-container {
-        // background-color: red;
+        
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: row;
         align-content: center;
-        align-items: flex-start;
-        width: 100%;
+        align-items: center;
+
         margin: 0 auto;
         padding: 0;
     }
 
     .flex-item {
-        padding: 15px 0;
+
+        // background-color: red;
+        padding: 15px 15px;;
+        margin-right: 10px;
     }
 
     a {
@@ -589,14 +592,6 @@ section {
         list-style: none;
         margin-bottom: 35px;
         margin-top: 0px;
-    }
-
-    #map {
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 35px;
-        height: 230px;
-        width: 600px;
     }
 
 }

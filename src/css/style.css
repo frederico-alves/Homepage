@@ -354,12 +354,12 @@ section {
     justify-content: center;
     flex-direction: row;
     align-content: center;
-    align-items: flex-start;
-    width: 100%;
+    align-items: center;
     margin: 0 auto;
     padding: 0; }
   .g7 .flex-item {
-    padding: 15px 0; }
+    padding: 15px 15px;
+    margin-right: 10px; }
   .g7 a {
     color: #2f2f2f;
     text-decoration: none;
@@ -370,12 +370,6 @@ section {
     list-style: none;
     margin-bottom: 35px;
     margin-top: 0px; }
-  .g7 #map {
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 35px;
-    height: 230px;
-    width: 600px; }
 
 footer {
   padding-top: 15px;
